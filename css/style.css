@@ -1,0 +1,279 @@
+@font-face {
+  font-family: latamSans-normal;
+  src: url(../font/LatamSans-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: latamSans-light;
+  src: url(../font/LatamSans-Light.otf);
+  font-weight: lighter;
+  font-style: normal;
+}
+
+.bannerContainer {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  /*ANIMACIONES*/
+}
+
+.bannerContainer .peru {
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  z-index: 5;
+}
+
+.bannerContainer .latam {
+  position: absolute;
+  width: 25%;
+  top: 11px;
+  left: 211px;
+  z-index: 5;
+}
+
+.bannerContainer .Onworld {
+  position: absolute;
+  width: 10%;
+  top: 208px;
+  left: 11px;
+  z-index: 5;
+}
+
+.bannerContainer .reserva {
+  position: absolute;
+  width: 83px;
+  height: 28px;
+  top: 208px;
+  left: 196px;
+  background-color: #ed1650;
+  border-radius: 11px;
+  z-index: 5;
+}
+
+.bannerContainer .reserva p {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  line-height: 0.7;
+  font-family: latamSans-normal, sans-serif;
+  font-weight: 200;
+}
+
+.bannerContainer .squareLima, .bannerContainer .squareCusco, .bannerContainer .squareArequipa {
+  background-image: url(../img/Rectangle.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 126px;
+  left: 134px;
+  width: 145px;
+  height: 59px;
+  z-index: 1;
+}
+
+.bannerContainer .squareLima p, .bannerContainer .squareCusco p, .bannerContainer .squareArequipa p {
+  color: white;
+  font-family: latamSans-normal,sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 18px;
+  padding: 0;
+  margin: 7px 0px 0px 19px;
+}
+
+.bannerContainer .squareLima p span, .bannerContainer .squareCusco p span, .bannerContainer .squareArequipa p span {
+  color: white;
+  font-family: latamSans-light, sans-serif;
+  font-weight: 200 !important;
+}
+
+.bannerContainer .lima {
+  width: 300px;
+  height: 250px;
+  background-image: url(../img/lima.jpg);
+  position: absolute;
+  z-index: 0;
+}
+
+.bannerContainer .cusco {
+  width: 300px;
+  height: 250px;
+  background-image: url(../img/Cusco.jpg);
+  left: -300px;
+  position: absolute;
+  z-index: 1;
+}
+
+.bannerContainer .arequipa {
+  width: 300px;
+  height: 250px;
+  background-image: url(../img/Arequipa.jpg);
+  position: absolute;
+  left: -300px;
+  z-index: 2;
+}
+
+.bannerContainer .reservaAnimationClass {
+  -webkit-animation-name: reserva;
+          animation-name: reserva;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+}
+
+@-webkit-keyframes reserva {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes reserva {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bannerContainer .squareAnimationLima {
+  -webkit-animation-name: vuelaLimaContainer;
+          animation-name: vuelaLimaContainer;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes vuelaLimaContainer {
+  from {
+    opacity: 0;
+    top: 100px;
+  }
+  to {
+    opacity: 1;
+    top: 126px;
+  }
+}
+
+@keyframes vuelaLimaContainer {
+  from {
+    opacity: 0;
+    top: 100px;
+  }
+  to {
+    opacity: 1;
+    top: 126px;
+  }
+}
+
+.bannerContainer .cuscoAnimationLeft {
+  -webkit-animation-name: vuelaCuscoContainer;
+          animation-name: vuelaCuscoContainer;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes vuelaCuscoContainer {
+  from {
+    opacity: 0;
+    left: -150px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes vuelaCuscoContainer {
+  from {
+    opacity: 0;
+    left: -150px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+.bannerContainer .squareAnimationCusco {
+  opacity: 0;
+  -webkit-animation-name: vuelaLimaContainer;
+          animation-name: vuelaLimaContainer;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@keyframes vuelaLimaContainer {
+  from {
+    opacity: 0;
+    top: 100px;
+  }
+  to {
+    opacity: 1;
+    top: 126px;
+  }
+}
+
+.bannerContainer .arequipaAnimationLeft {
+  -webkit-animation-name: vuelaCuscoContainer;
+          animation-name: vuelaCuscoContainer;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@keyframes vuelaCuscoContainer {
+  from {
+    opacity: 0;
+    left: -150px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+.bannerContainer .squareAnimationArequipa {
+  opacity: 0;
+  -webkit-animation-name: vuelaLimaContainer;
+          animation-name: vuelaLimaContainer;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@keyframes vuelaLimaContainer {
+  from {
+    opacity: 0;
+    top: 100px;
+  }
+  to {
+    opacity: 1;
+    top: 126px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
